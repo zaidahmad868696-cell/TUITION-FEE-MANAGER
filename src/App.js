@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { useState, useEffect, useRef } from "react";
 
 const CHERRY = "#D2042D";
@@ -563,7 +564,8 @@ export default function App() {
         input:focus { border-color:${CHERRY}!important; outline:none; box-shadow:0 0 0 3px ${CHERRY}22; }
         @keyframes fu { from{opacity:0;transform:translateX(-50%) translateY(10px)} to{opacity:1;transform:translateX(-50%) translateY(0)} }
       `}</style>
-    </div>
+    <Analytics />
+</div>
   );
 }
 
